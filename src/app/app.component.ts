@@ -1,5 +1,6 @@
 import { Component } from '@angular/core'
 import { IClosable } from './interfaces/closable.interface'
+import { IOpenable } from './interfaces/openable.interface'
 
 @Component({
   selector: 'app-root',
@@ -8,5 +9,9 @@ import { IClosable } from './interfaces/closable.interface'
 export class AppComponent {
   close(closable: IClosable) {
     closable.close()
+  }
+
+  open(openable: IOpenable) {
+    openable.open();
   }
 }

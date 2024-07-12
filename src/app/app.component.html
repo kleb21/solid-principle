@@ -1,0 +1,19 @@
+<section>
+  <button (click)="close(accordion)">Close component</button>
+  <app-accordion #accordion #baseAccordion="" />
+</section>
+
+<section>
+  <button (click)="close(baseAccordion)">Close directive</button>
+  <details
+    appBaseAccordion
+    #baseAccordion="appBaseAccordion"
+    [open]="baseAccordion.isOpen"
+  >
+    <summary>Accordion</summary>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem optio
+    illum, natus rerum perspiciatis tempora eos architecto pariatur laudantium
+    suscipit quia placeat exercitationem voluptatibus nulla illo, accusamus
+    veritatis incidunt molestias!
+  </details>
+</section>

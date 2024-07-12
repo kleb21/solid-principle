@@ -1,8 +1,12 @@
 import { Component } from '@angular/core'
+import { IClosable } from './interfaces/closable.interface'
 
 @Component({
   selector: 'app-root',
-  template: ` <router-outlet /> `,
-  styles: [],
+  templateUrl: './app.component.html',
 })
-export class AppComponent {}
+export class AppComponent {
+  close(closable: IClosable) {
+    closable.close()
+  }
+}

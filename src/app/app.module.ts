@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AccordionComponent } from './accordion/accordion.component';
+import { AccordionPanelComponent } from './accordion-panel/accordion-panel.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AccordionComponent,
+    AccordionPanelComponent
   ],
   imports: [
     BrowserModule,

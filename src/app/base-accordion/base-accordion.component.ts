@@ -2,19 +2,11 @@ import { AfterContentInit, Component, ContentChildren, Input, QueryList } from '
 import { AccordionPanelComponent } from '../accordion-panel/accordion-panel.component';
 
 @Component({
-  selector: 'app-accordion',
-  template: ` 
-    <ng-content class="container"></ng-content>
+  selector: 'app-base-accordion',
+  template: `
+    <ng-content></ng-content>
   `,
-  styles: [
-  `
-  .container {
-    margin:5rem;
-    border: solid 5px;
-  }
-  `
-
-  ]
+  styles: []
 })
 export class AccordionComponent implements AfterContentInit {
   @ContentChildren(AccordionPanelComponent) panels!: QueryList<AccordionPanelComponent>;

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core'
-import { BaseAccordionDirective } from '../../directive/base-accordion.directive'
+import { BaseAccordionDirective } from '../directive/base-accordion.directive'
 
 @Component({
   selector: 'app-accordion',

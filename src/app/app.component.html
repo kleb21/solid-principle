@@ -1,14 +1,15 @@
 <section>
-  <button (click)="close(accordion)">Close component</button>
-  <button (click)="open(accordion)">Open component</button>
+  <button class="button-style" (click)="close(accordion)">Close component</button>
+  <button class="button-style" (click)="open(accordion)">Open component</button>
   <app-accordion #accordion/>
 </section>
 
-<section>
-  <button (click)="close(baseAccordion)">Close directive</button>
-  <button (click)="open(baseAccordion)">Open directive</button>
+<section class="container">
+  <button class="button-style-2" (click)="close(baseAccordion)">Close directive</button>
+  <button class="button-style-2" (click)="open(baseAccordion)">Open directive</button>
   <details
     appBaseAccordion
+    class="accordion"
     #baseAccordion="appBaseAccordion"
     [open]="baseAccordion.isOpen"
   >
@@ -20,6 +21,7 @@
   </details>
   <details
     appBaseAccordion
+    class="accordion"
     #baseAccordion="appBaseAccordion"
     [open]="baseAccordion.isOpen"
   >

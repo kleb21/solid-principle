@@ -1,6 +1,7 @@
 import { Component } from '@angular/core'
 import { IClosable } from './interfaces/closable.interface'
 import { IOpenable } from './interfaces/openable.interface'
+import { BaseAccordionDirective } from './directive/base-accordion.directive';
 
 @Component({
   selector: 'app-root',
@@ -8,11 +9,11 @@ import { IOpenable } from './interfaces/openable.interface'
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  close(closable: IClosable) {
+  close(closable: BaseAccordionDirective) {
     closable.close()
   }
 
-  open(openable: IOpenable) {
+  open(openable: BaseAccordionDirective) {
     openable.open();
   }
 }

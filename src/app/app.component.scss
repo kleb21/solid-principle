@@ -27,8 +27,12 @@
     }
   }
 
-
   .container {
+    display: flex;
+    gap: 3rem;
+  }
+
+  .container-section {
     background: #f3f3f3; 
     padding: 10px;
     width: 400px; 
